@@ -1,0 +1,5 @@
+#define k_storyboardMasterObject @"MasterObject"
+#define k_storyboardTableController2 @"TableController2"
+#define k_reuseIdentifierTitle_1 @"Title_1"
+#define k_reuseIdentifierCell_Type_2 @"Cell_Type_2"
+#define k_tag12345 @"12345"
