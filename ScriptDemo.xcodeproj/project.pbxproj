@@ -35,20 +35,9 @@
 		B9CE97FA14959C7A00E996DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CE97D314959C7A00E996DD /* CoreData.framework */; };
 		B9CE980214959C7A00E996DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CE980014959C7A00E996DD /* InfoPlist.strings */; };
 		B9CE980514959C7A00E996DD /* ScriptDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CE980414959C7A00E996DD /* ScriptDemoTests.m */; };
+		B9F31E6C14B2686600BD47A9 /* generated in Resources */ = {isa = PBXBuildFile; fileRef = B9F31E6B14B2686600BD47A9 /* generated */; };
+		B9F31E6E14B26E5D00BD47A9 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = B9F31E6D14B26E5D00BD47A9 /* scripts */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		B9CE981214959CF100E996DD /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = file.storyboard;
-			isEditable = 1;
-			outputFiles = (
-				"${INPUT_FILE_BASE}.h",
-			);
-			script = "\"${PROJECT_DIR}/headers.rb\" \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h\"\n\ncp ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h ${PROJECT_DIR}/generated/${INPUT_FILE_BASE}.h";
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		B9CE97FB14959C7A00E996DD /* PBXContainerItemProxy */ = {
@@ -61,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B93C534C1497060800BFF718 /* pngs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngs.h; sourceTree = "<group>"; };
 		B93C534E14970D1C00BFF718 /* glyphicons_002_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_002_dog.png; sourceTree = "<group>"; };
 		B93C534F14970D1C00BFF718 /* glyphicons_031_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_031_bus.png; sourceTree = "<group>"; };
 		B93C535014970D1C00BFF718 /* glyphicons_042_group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_042_group.png; sourceTree = "<group>"; };
@@ -72,8 +60,6 @@
 		B93C535514970D1C00BFF718 /* glyphicons_193_circle_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_193_circle_ok.png; sourceTree = "<group>"; };
 		B93C535614970D1C00BFF718 /* glyphicons_264_fishes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_264_fishes.png; sourceTree = "<group>"; };
 		B93C535714970D1C00BFF718 /* glyphicons_304_vimeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_304_vimeo.png; sourceTree = "<group>"; };
-		B9A175C61495CDC9006CCFA0 /* MainStoryboard_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStoryboard_iPad.h; sourceTree = "<group>"; };
-		B9A175C71495CDC9006CCFA0 /* MainStoryboard_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStoryboard_iPhone.h; sourceTree = "<group>"; };
 		B9CE97C914959C7A00E996DD /* ScriptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CE97CD14959C7A00E996DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9CE97CF14959C7A00E996DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +84,8 @@
 		B9CE980114959C7A00E996DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9CE980314959C7A00E996DD /* ScriptDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptDemoTests.h; sourceTree = "<group>"; };
 		B9CE980414959C7A00E996DD /* ScriptDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptDemoTests.m; sourceTree = "<group>"; };
+		B9F31E6B14B2686600BD47A9 /* generated */ = {isa = PBXFileReference; lastKnownFileType = folder; path = generated; sourceTree = "<group>"; };
+		B9F31E6D14B26E5D00BD47A9 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,21 +132,12 @@
 			path = ScriptDemo/images;
 			sourceTree = "<group>";
 		};
-		B9A175C51495CDC9006CCFA0 /* generated */ = {
-			isa = PBXGroup;
-			children = (
-				B93C534C1497060800BFF718 /* pngs.h */,
-				B9A175C61495CDC9006CCFA0 /* MainStoryboard_iPad.h */,
-				B9A175C71495CDC9006CCFA0 /* MainStoryboard_iPhone.h */,
-			);
-			path = generated;
-			sourceTree = "<group>";
-		};
 		B9CE97BE14959C7A00E996DD = {
 			isa = PBXGroup;
 			children = (
+				B9F31E6D14B26E5D00BD47A9 /* scripts */,
+				B9F31E6B14B2686600BD47A9 /* generated */,
 				B93C534D14970D1C00BFF718 /* images */,
-				B9A175C51495CDC9006CCFA0 /* generated */,
 				B9CE97D514959C7A00E996DD /* ScriptDemo */,
 				B9CE97FD14959C7A00E996DD /* ScriptDemoTests */,
 				B9CE97CC14959C7A00E996DD /* Frameworks */,
@@ -245,9 +224,9 @@
 				B9CE97C514959C7A00E996DD /* Sources */,
 				B9CE97C614959C7A00E996DD /* Frameworks */,
 				B9CE97C714959C7A00E996DD /* Resources */,
+				B91D3EA31497BD5B00C3DE71 /* ShellScript */,
 			);
 			buildRules = (
-				B9CE981214959CF100E996DD /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -320,6 +299,8 @@
 				B93C535F14970D1C00BFF718 /* glyphicons_193_circle_ok.png in Resources */,
 				B93C536014970D1C00BFF718 /* glyphicons_264_fishes.png in Resources */,
 				B93C536114970D1C00BFF718 /* glyphicons_304_vimeo.png in Resources */,
+				B9F31E6C14B2686600BD47A9 /* generated in Resources */,
+				B9F31E6E14B26E5D00BD47A9 /* scripts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +315,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B91D3EA31497BD5B00C3DE71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		B9A175C81495D302006CCFA0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,7 +340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"ScriptDemo/images\"\nls \n\n\"${PROJECT_DIR}/pngs.rb\" \"${DERIVED_FILE_DIR}/pngs.h\"\n\ncp ${DERIVED_FILE_DIR}/pngs.h ${PROJECT_DIR}/generated/pngs.h";
+			shellScript = "cd  \"${PROJECT_DIR}\"\n\n\"./scripts/headers.rb\" \"./ScriptDemo/en.lproj/\" \"${PROJECT_DIR}/generated/\"\n\"./scripts/pngs.rb\" \"./ScriptDemo/images\" \"${PROJECT_DIR}/generated/\"\n\ncp -r \"./generated\" \"${DERIVED_FILE_DIR}\"";
 		};
 		B9CE97F314959C7A00E996DD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -484,6 +478,7 @@
 				GCC_PREFIX_HEADER = "ScriptDemo/ScriptDemo-Prefix.pch";
 				INFOPLIST_FILE = "ScriptDemo/ScriptDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = generated;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -495,6 +490,7 @@
 				GCC_PREFIX_HEADER = "ScriptDemo/ScriptDemo-Prefix.pch";
 				INFOPLIST_FILE = "ScriptDemo/ScriptDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = generated;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

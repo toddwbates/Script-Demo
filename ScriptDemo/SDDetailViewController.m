@@ -8,7 +8,8 @@
 
 #import "SDDetailViewController.h"
 #import "MainStoryboard_iPad.h"
-
+#import "pngs.h"
+        
 @interface SDDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -56,6 +57,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIImageView* tmp = [[UIImageView alloc] initWithImage:k_png_glyphicons_002_dog];
+    [self.view addSubview:tmp];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
